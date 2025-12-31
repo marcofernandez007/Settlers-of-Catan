@@ -1,0 +1,5 @@
+{
+  "name": "Catan Strategist",
+  "description": "A fully functional Settlers of Catan board game with a built-in Gemini AI Advisor to help you master resource management and strategic placement.",
+  "requestFramePermissions": []
+}
