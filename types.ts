@@ -33,6 +33,14 @@ export interface Hex {
   tokenValue: number | null;
 }
 
+export interface ChatMessage {
+  id: string;
+  playerId: number;
+  playerName: string;
+  text: string;
+  timestamp: number;
+}
+
 export interface Intersection {
   id: string; 
   coords: { x: number; y: number };
@@ -59,6 +67,7 @@ export interface GameState {
   phase: GamePhase;
   diceRoll: [number, number] | null;
   logs: string[];
+  chatMessages: ChatMessage[];
   longestRoadOwnerId?: number | null;
   longestRoadLength?: number;
   largestArmyOwnerId?: number | null;
